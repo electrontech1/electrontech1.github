@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE FORM</title>
+    <link rel="stylesheet" href="style 7.css">
+</head>
+<body>
+    <div class="container">
+         <div class="card">
+            <div class="inner-card" id="card">
+                <div class="card-front">
+                     <h2><b>LOGIN</b></h2>
+
+                      <form>
+                        <input type="email"
+                        class="input-box"
+                        placeholder="Email"
+                        required>
+
+                        <input type="number"
+                        class="input-box"
+                        placeholder="Phone number"
+                        required>
+
+                        <input type="password"
+                        class="input-box"
+                        placeholder="password"
+                        required> 
+
+                        <input type="checkbox"> <span>Remember me</span>
+
+                        <button type="button" class="btn"  onclick="openLogin()">I'm new here</button>
+                        <br><br>
+
+                        <button type="submit" class="submit-btn">Login</button> 
+
+                        <a href="">Forgoten password</a>
+                    </div>
+                      </form> 
+                      
+                      <div class="card-back">
+                        <h2><b>SIGN UP</b></h2>
+                        <FORM>
+                            <input type="text"
+                        class="input-box"
+                        placeholder="Full name"
+                        required>
+
+                        <input type="email"
+                        class="input-box"
+                        placeholder="Email"
+                        required>
+
+                        <input type="number"
+                        class="input-box"
+                        placeholder="Phone number"
+                        required>
+
+                        <input type="Password"
+                        class="input-box"
+                        placeholder="Password"
+                        required> <details>
+                          <summary>Password must be atleast 8 letters</summary>
+                          <P>password can either be in uppercase, lowercase, characters 
+                            (@&*$) or their combination
+                              </P>
+                      </details>
+                        
+
+                        <input type="Date"
+                        class="input-box"
+                        placeholder="Date-of-Birth"
+                        required>
+
+                        <button type="submit" class="submit-btn">Sign up</button>
+                        
+                        <input type="checkbox"> <span>Remember me</span>
+
+                        <button type="button" class="btn" onclick="openSignup()">I' ve an Account</button>
+
+                        <a href="">Forgoten password</a>
+
+                        </FORM>
+                      </div>
+
+            </div>
+         </div>   
+    </div>
+
+    <script>
+      var card = document.getElementById("card");
+
+      function openLogin(){
+        card.style.transform = "rotateY(-180deg)";
+      }
+
+      function openSignup(){
+        card.style.transform = "rotateY(0deg)";
+      }
+    </script>
+</body>
+</html>
